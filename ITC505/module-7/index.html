@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/home" id="home-link">Home</a></li>
+                <li><a href="/about" id="about-link">About</a></li>
+                <li><a href="/contact" id="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div id="red-box" class="color-box red-box">
+            <p>I am Blue</p>
+        </div>
+        <div id="blue-box" class="color-box blue-box">
+            <p>I am Red</p>
+        </div>
+    </div>
+    <h1>HTTP Status Codes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Numerical Code</th>
+                <th>Purpose</th>
+                <th>Situation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Request Entity Too Large</td>
+                <td>413</td>
+                <td>This status code indicates that the request is larger than the server is willing or able to process.
+                </td>
+                <td>If a client attempts to upload a file that exceeds the server's maximum file size limit.</td>
+            </tr>
+            <tr>
+                <td>Temporary Redirect</td>
+                <td>307</td>
+                <td>This status code indicates that the requested resource resides temporarily under a different URI.</td>
+                <td>When a website is temporarily moved to a new domain or URL, and users should be redirected to this
+                    temporary address.</td>
+            </tr>
+            <tr>
+                <td>Partial Content</td>
+                <td>206</td>
+                <td>This status code is used when the server is delivering only part of the resource due to a range header
+                    sent by the client.</td>
+                <td>When a client requests a specific range of bytes from a video file for streaming.</td>
+            </tr>
+            <tr>
+                <td>Upgrade Required</td>
+                <td>426</td>
+                <td>This status code indicates that the client should switch to a different protocol.</td>
+                <td>If a server wants to force the client to switch from HTTP/1.1 to HTTP/2 for better performance.</td>
+            </tr>
+            <tr>
+                <td>Not Extended</td>
+                <td>510</td>
+                <td>This status code is used to further extend the request and requires further extensions to be made by the
+                    client.</td>
+                <td>When the server requires more extensions to fulfill the request, typically used in conjunction with the
+                    'OPTIONS' request method.</td>
+            </tr>
+        </tbody>
+    </table>
+<main id="content">
+    <h1>Set User Cookies</h1>
+    <form id="user-form" action="/set-cookie" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Get User Cookies</h2>
+    <a href="/get-cookie">View Cookies</a>
+
+    <!-- Other content remains the same -->
+</main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
