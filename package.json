@@ -1,7 +1,8 @@
 {
-  "name": "lab-7-online-disscussion",
+  "name": "lab-7-online-discussion",
   "version": "1.0.0",
-  "main": "script.js",
+  "description": "",
+  "main": "authenticate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -9,10 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "cookie": "^0.6.0",
-    "cookie-parser": "^1.4.6",
     "express": "^4.19.2"
   }
 }
